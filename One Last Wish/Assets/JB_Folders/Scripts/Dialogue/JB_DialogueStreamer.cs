@@ -40,7 +40,7 @@ public class JB_DialogueStreamer : MonoBehaviour
     char fieldSplitter = ',';
     char subSplitter = '~';
 
-    List<string> fullConvoSplit;
+    List<string> fullConvoSplit = new List<string>();
     string[] convoElementRawStrings;
 
     [HideInInspector]
@@ -58,7 +58,7 @@ public class JB_DialogueStreamer : MonoBehaviour
         fullConvoSplit.Clear();
         fullConvoSplit = new List<string>(convo.text.Split(lineSplitter));    // split the CSV file by line to get each conversation element in its own array field
 
-        for (int i = 0; i < fullConvoSplit.Count; i++)
+        for (int i = 1; i < fullConvoSplit.Count; i++)
         {
             convoElementRawStrings = fullConvoSplit[i].Split(fieldSplitter);                // split the conversation element
             currentConvo.Add(SplitStringToConvoElement(convoElementRawStrings, i + 1));     // create ConvoElement for each line of dialogue
@@ -94,7 +94,7 @@ public class JB_DialogueStreamer : MonoBehaviour
 
         // add resulting markers if relevant
         if (rawElement[6] == "") ErrorParsingConversation(lineNum, "get required marker (make sure to insert '-' if no markers are required)");
-        else if (rawElement[6] == "-") convElement.requiredMarkers = null;
+        else if (rawElement[6] == "-") convElement.resultantMarkers = null;
         else convElement.resultantMarkers = rawElement[6].Split(subSplitter);
 
         // get response flavour text (if none then it means this element is wife's line)
@@ -119,12 +119,12 @@ public class JB_DialogueStreamer : MonoBehaviour
             ErrorParsingConversation(lineNum, "get the element cluster which this one leads to");
 
         // for first element only, get element type (line 'l' or response 'r') if a captain element
-        if (lineNum == 1 && convElement.lineType == Personae.cap)
+        if (lineNum == 2 && convElement.lineType == Personae.cap)
         {
-            if (rawElement[11].Length == 1) // if just a character
+            if (rawElement[11].Length == 2) // if just a character
             {
-                if (rawElement[11] == "l") convElement.firstLineType = ElementType.line;
-                else if (rawElement[11] == "r") convElement.firstLineType = ElementType.response;
+                if (rawElement[11][0] == 'l') convElement.firstLineType = ElementType.line;
+                else if (rawElement[11][0] == 'r') convElement.firstLineType = ElementType.response;
                 else ErrorParsingConversation(lineNum, "get first line element type (ensure it is either 'l' or 'r')");
             }
             else

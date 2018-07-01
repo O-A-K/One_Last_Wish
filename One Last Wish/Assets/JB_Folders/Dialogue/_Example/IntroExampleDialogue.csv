@@ -1,0 +1,5 @@
+#,Event name,Subtitle,emotion min,emotion max,Required marker(s),Resultant marker(s),Flavour text,Post delay,Emotion effect,Leads to…,1st line type
+1,introLine1,Hey,0,100,-,-,Hey,0,0,2,r
+1,introLine2,I've got some bad news,0,100,-,-,Got some bad news,0,-10,3,
+1,introLine3,Don't freak out ~ but I'm not gonna make it out,0,100,-,-,Not gonna make it,0,-20,4,
+1,introLine4,How you getting on? Already clear of the ship?,0,100,-,delay,How you getting on?,0,-5,5,
