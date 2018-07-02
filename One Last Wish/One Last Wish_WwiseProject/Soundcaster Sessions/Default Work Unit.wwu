@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{938BFEB8-1A0F-4BE4-AFD4-AE3F1AC3DEE4}" SchemaVersion="85">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{938BFEB8-1A0F-4BE4-AFD4-AE3F1AC3DEE4}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{B420BC10-D29F-491D-9649-E49FD516BC9A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="responseMouseEnter" ID="{296D8CE5-6977-4376-8C6F-BCF0EA9059A9}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

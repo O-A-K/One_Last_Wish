@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3959135664	introLine1			\Default Work Unit\Vox\Example Voices\introLine1	Hey
+	3959135666	introLine3			\Default Work Unit\Vox\Example Voices\introLine3	Don't freak out ~ but I'm not gonna make it out
+	3959135667	introLine2			\Default Work Unit\Vox\Example Voices\introLine2	I've got some bad news
+	3959135669	introLine4			\Default Work Unit\Vox\Example Voices\introLine4	How you getting on? Already clear of the ship?
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	106416953	Hey	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Hey_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Hey		8884
+	384914904	Not gonna make it	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Not gonna make it_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Not gonna make it		35727
+	632635688	Got some bad news	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Got some bad news_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Got some bad news		21293
+	940009059	How you getting on	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\How you getting on_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\How you getting on		35468
+
