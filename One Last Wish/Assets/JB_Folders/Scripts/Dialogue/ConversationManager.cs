@@ -48,49 +48,21 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
+    #region Conversation Loader
+
     public void StartConversation()
     {
         dialogueStreamer.SetupConversation();
         currentElementCluster = 1;
+        currentElementIndex = 0;
         inConversation = true;
-        LoadFirstLine();
+        LoadNextLine();
         responseContent.gameObject.SetActive(true);
     }
 
-    void LoadFirstLine()
+    void LoadNextLine()
     {
-        // if previous response options in hierarchy, delete
-        if (loadedResponses.Count > 0)
-        {
-            for (int i = loadedResponses.Count - 1; i >= 0; i--)
-            {
-                Destroy(loadedResponses[i].gameObject);
-                loadedResponses.RemoveAt(i);
-            }
-        }
-
-        // if a cap element check whether to load flavour text or subtitles, else load wife's subtitles
-        if (dialogueStreamer.currentConvo[0].lineType == Personae.cap)
-        {
-            if (dialogueStreamer.currentConvo[0].firstLineType == ElementType.line)
-            {
-                // load subtitles
-
-            }
-            else
-            {
-                // load response options
-                LoadCurrentResponseCluster();
-            }
-        }
-        else
-        {
-            // load subtitles
-        }
-    }
-
-    void LoadCurrentResponseCluster()
-    {
+        // get possible elements to display/play
         possibleElements.Clear();
 
         // ASSUMES ELEMENTS WITH SAME ELEMENT NUMBER ARE ALL CONTIGUOUS IN THE CSV
@@ -101,20 +73,50 @@ public class ConversationManager : MonoBehaviour
             {
                 if (!foundCluster) foundCluster = true;
 
-                // if this element number matches the currentElementCluster and is cap's element 
-                if (dialogueStreamer.currentConvo[i].lineType == Personae.cap)
+                // is within the emotion range add it to possible elements list
+                if (emotionRange >= dialogueStreamer.currentConvo[i].minEmotionRange
+                    && emotionRange <= dialogueStreamer.currentConvo[i].maxEmotionRange)
                 {
-                    // and is within the emotion range add it to possible elements list
-                    if (emotionRange >= dialogueStreamer.currentConvo[i].minEmotionRange
-                        && emotionRange <= dialogueStreamer.currentConvo[i].maxEmotionRange)
-                    {
-                        possibleElements.Add(i);
-                    }
+                    possibleElements.Add(i);
                 }
-                else Debug.LogError("Element on line " + i + 1 + "needs flavour text or is incorrectly numbered, ya dingleberry");
+                else Debug.LogError("Element in cluster  " + currentElementCluster + " needs flavour text or is incorrectly numbered, ya dingleberry");
 
             }
             else if (foundCluster) break;   // once no longer in cluster can stop searching
+        }
+
+        if (possibleElements.Count > 0)
+        {
+            // if next element is a cap response element load responses else load subtitles
+            if (dialogueStreamer.currentConvo[possibleElements[0]].lineType == Personae.cap
+                 && dialogueStreamer.currentConvo[possibleElements[0]].firstLineType == ElementType.response)
+            {
+                // load response options
+                LoadCurrentResponseCluster();
+            }
+            else
+            {
+                // load subtitles
+                LoadCurrentSubtitleCluster();
+            }
+        }
+        else
+        {
+            // TODO end of conversation
+            Debug.Log("End of conversation");
+        }
+    }
+
+    void LoadCurrentResponseCluster()
+    {
+        // if previous response options still in hierarchy, delete
+        if (loadedResponses.Count > 0)
+        {
+            for (int i = loadedResponses.Count - 1; i >= 0; i--)
+            {
+                Destroy(loadedResponses[i].gameObject);
+                loadedResponses.RemoveAt(i);
+            }
         }
 
         // if some response options were found
@@ -141,18 +143,25 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
-    public void LoadSubtitles(string _eventName, int _elementIndex)
+    void LoadCurrentSubtitleCluster()
     {
-        // get the element to load
-        currentElementIndex = _elementIndex;
-        currentEventName = _eventName;
+        // if some subtitle options were found
+        if (possibleElements.Count > 0)
+        {
+            // randomly remove until only one is left
+            while (possibleElements.Count > 1)
+            {
+                possibleElements.RemoveAt(Random.Range(0, possibleElements.Count));
+            }
+            currentElementIndex = possibleElements[0];
+        }
+        else
+        {
+            Debug.LogError("No possible elements found");
+            return;
+        }
 
-        // prep UI elements
-        responseContent.gameObject.SetActive(false);
-        subtitleText.gameObject.SetActive(true);
-        currentSubtitleSegment = 0;
-        subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[0];
-        PlayVoiceLine(currentEventName);
+        LoadSubtitles(dialogueStreamer.currentConvo[currentElementIndex].eventName, currentElementIndex);
     }
 
     void ReducePossibleElementsToMaxAllowed()
@@ -167,12 +176,41 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
+    void PrepNextElement()
+    {
+        // check if last element leads to another
+        if (dialogueStreamer.currentConvo[currentElementIndex].leadsToElement == 0)
+        {
+            // TODO end of conversation
+            Debug.Log("End of conversation");
+        }
+        else currentElementCluster = dialogueStreamer.currentConvo[currentElementIndex].leadsToElement;
+
+        LoadNextLine();
+    }
+
+    #endregion
+
     public void PlaySound(string eventName)
     {
         AkSoundEngine.PostEvent(eventName, gameObject);
     }
 
     #region Subtitles
+
+    public void LoadSubtitles(string _eventName, int _elementIndex)
+    {
+        // get the element to load
+        currentElementIndex = _elementIndex;
+        currentEventName = _eventName;
+
+        // prep UI elements
+        responseContent.gameObject.SetActive(false);
+        subtitleText.gameObject.SetActive(true);
+        currentSubtitleSegment = 0;
+        subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[0];
+        PlayVoiceLine(currentEventName);
+    }
 
     void PlayVoiceLine(string eventName)
     {
@@ -196,6 +234,7 @@ public class ConversationManager : MonoBehaviour
             case AkCallbackType.AK_EndOfEvent:
                 // fade out
                 StartCoroutine("FadeSubtitles");
+                PrepNextElement();
                 break;
         }
     }

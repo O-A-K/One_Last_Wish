@@ -36,22 +36,67 @@
 			<Path>ExampleIntro.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3959135664" Name="introLine1" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine1" DurationType="OneShot" DurationMin="0.888163" DurationMax="0.888163"/>
+				<Event Id="756628512" Name="introLine10" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine10" DurationType="OneShot" DurationMin="1.541224" DurationMax="1.541224"/>
+				<Event Id="756628513" Name="introLine11" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine11" DurationType="OneShot" DurationMin="1.201633" DurationMax="1.201633"/>
+				<Event Id="756628514" Name="introLine12" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine12" DurationType="OneShot" DurationMin="5.694694" DurationMax="5.694694"/>
+				<Event Id="756628515" Name="introLine13" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine13" DurationType="OneShot" DurationMin="2.560000" DurationMax="2.560000"/>
 				<Event Id="3959135667" Name="introLine2" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine2" DurationType="OneShot" DurationMin="1.750204" DurationMax="1.750204"/>
 				<Event Id="3959135666" Name="introLine3" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine3" DurationType="OneShot" DurationMin="3.004082" DurationMax="3.004082"/>
 				<Event Id="3959135669" Name="introLine4" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine4" DurationType="OneShot" DurationMin="3.552653" DurationMax="3.552653"/>
+				<Event Id="3959135668" Name="introLine5" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine5" DurationType="OneShot" DurationMin="2.351020" DurationMax="2.351020"/>
+				<Event Id="3959135671" Name="introLine6" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine6" DurationType="OneShot" DurationMin="1.515102" DurationMax="1.515102"/>
+				<Event Id="3959135670" Name="introLine7" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine7" DurationType="OneShot" DurationMin="0.705306" DurationMax="0.705306"/>
+				<Event Id="3959135673" Name="introLine8" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine8" DurationType="OneShot" DurationMin="1.175510" DurationMax="1.175510"/>
+				<Event Id="3959135672" Name="introLine9" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine9" DurationType="OneShot" DurationMin="2.089796" DurationMax="2.089796"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="1519286" Language="SFX">
+					<ShortName>Hey nearly out.wav</ShortName>
+					<Path>SFX\Hey nearly out_F7D0E330.wem</Path>
+				</File>
+				<File Id="7330252" Language="SFX">
+					<ShortName>What are you talking about.wav</ShortName>
+					<Path>SFX\What are you talking about_F7D0E330.wem</Path>
+				</File>
 				<File Id="106416953" Language="SFX">
 					<ShortName>Hey.wav</ShortName>
 					<Path>SFX\Hey_F7D0E330.wem</Path>
+				</File>
+				<File Id="218271074" Language="SFX">
+					<ShortName>What do you mean bad news.wav</ShortName>
+					<Path>SFX\What do you mean bad news_F7D0E330.wem</Path>
+				</File>
+				<File Id="362878673" Language="SFX">
+					<ShortName>Bad news.wav</ShortName>
+					<Path>SFX\Bad news_F7D0E330.wem</Path>
 				</File>
 				<File Id="384914904" Language="SFX">
 					<ShortName>Not gonna make it.wav</ShortName>
 					<Path>SFX\Not gonna make it_F7D0E330.wem</Path>
 				</File>
+				<File Id="438421825" Language="SFX">
+					<ShortName>Hey you.wav</ShortName>
+					<Path>SFX\Hey you_F7D0E330.wem</Path>
+				</File>
+				<File Id="446872536" Language="SFX">
+					<ShortName>Hi hun.wav</ShortName>
+					<Path>SFX\Hi hun_F7D0E330.wem</Path>
+				</File>
 				<File Id="632635688" Language="SFX">
 					<ShortName>Got some bad news.wav</ShortName>
 					<Path>SFX\Got some bad news_F7D0E330.wem</Path>
+				</File>
+				<File Id="651165165" Language="SFX">
+					<ShortName>Yeah just about.wav</ShortName>
+					<Path>SFX\Yeah just about_F7D0E330.wem</Path>
+				</File>
+				<File Id="737247821" Language="SFX">
+					<ShortName>Nearly what about you.wav</ShortName>
+					<Path>SFX\Nearly what about you_F7D0E330.wem</Path>
+				</File>
+				<File Id="890031811" Language="SFX">
+					<ShortName>Thats not funny.wav</ShortName>
+					<Path>SFX\Thats not funny_F7D0E330.wem</Path>
 				</File>
 				<File Id="940009059" Language="SFX">
 					<ShortName>How you getting on.wav</ShortName>

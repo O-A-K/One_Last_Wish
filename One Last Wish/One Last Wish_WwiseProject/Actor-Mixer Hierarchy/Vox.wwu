@@ -6,6 +6,13 @@
 				<Folder Name="Example voices" ID="{A11E83F7-7E3B-4257-8FCE-D0B65F616632}" ShortID="653546687">
 					<ChildrenList>
 						<Sound Name="Got some bad news" ID="{1341ADE1-6E80-428F-8DB1-8DA001AE64CA}" ShortID="301884491">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
@@ -25,6 +32,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Hey" ID="{A3B2D736-5E85-483C-95D4-6790AF3E5251}" ShortID="237378870">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
@@ -44,6 +58,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="How you getting on" ID="{EE99589C-F7DC-43FC-8782-20C4A60745E9}" ShortID="292499700">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
@@ -63,6 +84,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Not gonna make it" ID="{E63D06C7-10D2-4B6D-9785-27BB6D8C0F8F}" ShortID="305530238">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
@@ -79,6 +107,233 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Not gonna make it" ID="{E02302A5-1E94-4C1B-8548-1E856D555C35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Bad news" ID="{6B29571F-3853-4DDE-BB53-C8EF5254901D}" ShortID="380868140">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bad news" ID="{990FBA5D-4593-46A5-81A4-C1946050559E}" ShortID="362878673">
+									<Language>SFX</Language>
+									<AudioFile>Bad news.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bad news" ID="{990FBA5D-4593-46A5-81A4-C1946050559E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hey nearly out" ID="{74AC927F-86E2-46D0-90C8-FD056E6BE740}" ShortID="539870502">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hey nearly out" ID="{FA086D1F-EA72-4DA6-B0EF-CC98EB90B0AD}" ShortID="1519286">
+									<Language>SFX</Language>
+									<AudioFile>Hey nearly out.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hey nearly out" ID="{FA086D1F-EA72-4DA6-B0EF-CC98EB90B0AD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hey you" ID="{C95D2D62-867F-48A7-A16E-23F49F821ED5}" ShortID="1034908368">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hey you" ID="{72E7CED5-7550-4E54-B1AD-545443FF93DC}" ShortID="438421825">
+									<Language>SFX</Language>
+									<AudioFile>Hey you.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hey you" ID="{72E7CED5-7550-4E54-B1AD-545443FF93DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hi hun" ID="{8C06532E-CDE2-4E16-8DD7-C6E3C9B6B591}" ShortID="353525075">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hi hun" ID="{832ACD5B-7CD2-4D9B-A931-A2248F63A075}" ShortID="446872536">
+									<Language>SFX</Language>
+									<AudioFile>Hi hun.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hi hun" ID="{832ACD5B-7CD2-4D9B-A931-A2248F63A075}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="What do you mean bad news" ID="{F559F8DC-F52C-4BFA-BB63-F916A30B38B2}" ShortID="75056755">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="What do you mean bad news" ID="{2D4F85EC-F1A4-4E2E-AFF5-15DCBD9705D3}" ShortID="218271074">
+									<Language>SFX</Language>
+									<AudioFile>What do you mean bad news.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="What do you mean bad news" ID="{2D4F85EC-F1A4-4E2E-AFF5-15DCBD9705D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Thats not funny" ID="{163A6A54-63FA-4E09-9CA7-8D17558B480E}" ShortID="467862175">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Thats not funny" ID="{6BB386FC-C2D6-48A4-B440-E5C3935A60E5}" ShortID="890031811">
+									<Language>SFX</Language>
+									<AudioFile>Thats not funny.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Thats not funny" ID="{6BB386FC-C2D6-48A4-B440-E5C3935A60E5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="What are you talking about" ID="{600A48B8-339D-487D-85AE-AAE0703F9DD9}" ShortID="987597807">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="What are you talking about" ID="{E0979B8D-252A-4145-8E4D-3B245E0BED9D}" ShortID="7330252">
+									<Language>SFX</Language>
+									<AudioFile>What are you talking about.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="What are you talking about" ID="{E0979B8D-252A-4145-8E4D-3B245E0BED9D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Yeah just about" ID="{0C7F94D6-E3DE-44B2-A6E8-64E8B4666A36}" ShortID="889276770">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Yeah just about" ID="{41CAC94A-B098-451F-91AE-D02D09FA61CD}" ShortID="651165165">
+									<Language>SFX</Language>
+									<AudioFile>Yeah just about.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Yeah just about" ID="{41CAC94A-B098-451F-91AE-D02D09FA61CD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Nearly what about you" ID="{1F3EBD59-A8A0-4586-94B3-59E2341AC33F}" ShortID="999849523">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Nearly what about you" ID="{860ABEFB-69DB-4F9F-AAF5-121C4C81D7A1}" ShortID="737247821">
+									<Language>SFX</Language>
+									<AudioFile>Nearly what about you.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Nearly what about you" ID="{860ABEFB-69DB-4F9F-AAF5-121C4C81D7A1}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

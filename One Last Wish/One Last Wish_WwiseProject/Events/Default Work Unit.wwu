@@ -96,6 +96,141 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="introLine5" ID="{79C98AF8-55B7-4069-AEB0-15C6D62E6115}">
+									<Comment>Hi hun - already on your way?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{35FC0B8A-E380-40B7-8A36-2B40F5C538F3}" ShortID="70900369">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hi hun" ID="{8C06532E-CDE2-4E16-8DD7-C6E3C9B6B591}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine6" ID="{CDC2A5DF-C1EC-4F77-A845-14742BAA967C}">
+									<Comment>Hey - nearly out?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{574BEBF6-FF9E-4D2A-A864-26C23C7CE8F5}" ShortID="1017170597">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hey nearly out" ID="{74AC927F-86E2-46D0-90C8-FD056E6BE740}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine7" ID="{5F9C4ABA-1111-4158-B352-D1EE4CA1E7E2}">
+									<Comment>Hey you</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{BBC6418C-A4D0-4FEA-9F8C-C24663584FE1}" ShortID="754210955">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hey you" ID="{C95D2D62-867F-48A7-A16E-23F49F821ED5}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine8" ID="{78FED3C3-953C-416D-9E80-A1799BAFD553}">
+									<Comment>Bad news?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{9EF0513F-3FCF-4A86-A89E-1A6A9CEE54F4}" ShortID="693966699">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bad news" ID="{6B29571F-3853-4DDE-BB53-C8EF5254901D}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine9" ID="{0BC59CDA-7ED2-4B4A-9CEC-890693BC1FC9}">
+									<Comment>What do you mean "bad news"</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{0A7C2006-13A1-4AB4-9E74-4B57C83823F3}" ShortID="205379015">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="What do you mean bad news" ID="{F559F8DC-F52C-4BFA-BB63-F916A30B38B2}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine10" ID="{4798EFF1-A6E7-4E09-AD61-F2AB444F38A0}">
+									<Comment>What are you talking about?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{8381D98E-50F1-4D0C-93C9-75E57ACC173C}" ShortID="430210250">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="What are you talking about" ID="{600A48B8-339D-487D-85AE-AAE0703F9DD9}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine11" ID="{0AC6CC62-55BF-4425-9BAC-8E3E528680DE}">
+									<Comment>That's not funny</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{BE1DF567-C28E-4D87-A815-54D71940EE8C}" ShortID="219303361">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Thats not funny" ID="{163A6A54-63FA-4E09-9CA7-8D17558B480E}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine12" ID="{3604B61C-D453-4EEC-8896-3C7403583B40}">
+									<Comment>Yeah just about. Drew said we have to be at least a lighthour away just to be safe</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{6003A0B3-AAFF-4106-A45A-27BA57F3BDB6}" ShortID="1010937046">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Yeah just about" ID="{0C7F94D6-E3DE-44B2-A6E8-64E8B4666A36}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine13" ID="{AC2F98C7-D06E-4779-8C8D-E9AE3E6A3743}">
+									<Comment>Yeah nearly. What about you?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{CB31F302-8FBC-461E-AD23-79305E3156D8}" ShortID="305544359">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Nearly what about you" ID="{1F3EBD59-A8A0-4586-94B3-59E2341AC33F}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

@@ -1,5 +1,14 @@
 #,Event name,Subtitle,emotion min,emotion max,Required marker(s),Resultant marker(s),Flavour text,Post delay,Emotion effect,Leads to…,1st line type
 1,introLine1,Hey,0,100,-,-,Hey,0,0,2,r
-1,introLine2,I've got some bad news,0,100,-,-,Got some bad news,0,-10,3,
-1,introLine3,Don't freak out ~ but I'm not gonna make it out,0,100,-,-,Not gonna make it,0,-20,4,
-1,introLine4,How you getting on? ~ Already clear of the ship?,0,100,-,delay,How you getting on?,0,-5,5,
+1,introLine2,I've got some bad news,0,100,-,-,Got some bad news,0,-2,3,
+1,introLine3,Don't freak out ~ but I'm not gonna make it out,0,100,-,told her,Not gonna make it,0,-3,4,
+1,introLine4,How you getting on? ~ Already clear of the ship?,0,100,-,delay,How you getting on?,0,-1,5,
+2,introLine5,Hi hun - already on your way?,0,100,-,-,,0,-5,6,
+2,introLine6,Hey - nearly out?,0,100,-,-,,0,-2,6,
+2,introLine7,Hey you,0,100,-,-,,0,-5,7,
+3,introLine8,Bad news?,0,100,-,-,,0,0,8,
+3,introLine9,"What do you mean ""bad news""?",0,100,-,-,,0,-2,8,
+4,introLine10,What are you talking about?,0,100,-,-,,0,-1,8,
+4,introLine11,That's not funny.,0,100,-,-,,0,-5,9,
+5,introLine12,Yeah just about. Drew said we have to be at least a lighthour away - just to be safe,0,100,-,-,,0,0,10,
+5,introLine13,Nearly. What about you?,0,100,-,-,,0,-1,6,

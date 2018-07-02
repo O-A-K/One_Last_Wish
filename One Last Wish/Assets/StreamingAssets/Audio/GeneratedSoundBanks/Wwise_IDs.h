@@ -17,6 +17,15 @@ namespace AK
         static const AkUniqueID INTROLINE2 = 3959135667U;
         static const AkUniqueID INTROLINE3 = 3959135666U;
         static const AkUniqueID INTROLINE4 = 3959135669U;
+        static const AkUniqueID INTROLINE5 = 3959135668U;
+        static const AkUniqueID INTROLINE6 = 3959135671U;
+        static const AkUniqueID INTROLINE7 = 3959135670U;
+        static const AkUniqueID INTROLINE8 = 3959135673U;
+        static const AkUniqueID INTROLINE9 = 3959135672U;
+        static const AkUniqueID INTROLINE10 = 756628512U;
+        static const AkUniqueID INTROLINE11 = 756628513U;
+        static const AkUniqueID INTROLINE12 = 756628514U;
+        static const AkUniqueID INTROLINE13 = 756628515U;
         static const AkUniqueID RESPONSEMOUSEENTER = 3518590569U;
     } // namespace EVENTS
 

@@ -7,8 +7,17 @@
 					<ChildrenList>
 						<SoundBank Name="ExampleIntro" ID="{7EDE3D66-DD45-4D39-877F-851512AF16E4}">
 							<ObjectInclusionList>
+								<ObjectRef Name="introLine5" ID="{79C98AF8-55B7-4069-AEB0-15C6D62E6115}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine7" ID="{5F9C4ABA-1111-4158-B352-D1EE4CA1E7E2}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine8" ID="{78FED3C3-953C-416D-9E80-A1799BAFD553}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine11" ID="{0AC6CC62-55BF-4425-9BAC-8E3E528680DE}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
 								<ObjectRef Name="introLine2" ID="{84502C78-51BF-456A-927C-1B2C048EA438}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine13" ID="{AC2F98C7-D06E-4779-8C8D-E9AE3E6A3743}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine9" ID="{0BC59CDA-7ED2-4B4A-9CEC-890693BC1FC9}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine10" ID="{4798EFF1-A6E7-4E09-AD61-F2AB444F38A0}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine12" ID="{3604B61C-D453-4EEC-8896-3C7403583B40}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
 								<ObjectRef Name="introLine3" ID="{D7F8C18E-475E-4EFD-893C-42B67AA2386E}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine6" ID="{CDC2A5DF-C1EC-4F77-A845-14742BAA967C}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
 								<ObjectRef Name="introLine1" ID="{2970DE33-ADF8-4FAB-B0B2-79938E30AA8D}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
 								<ObjectRef Name="introLine4" ID="{D4CF3054-0429-4FBD-B86D-EF0ECAF82CC1}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
