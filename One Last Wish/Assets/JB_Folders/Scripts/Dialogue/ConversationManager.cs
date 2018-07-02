@@ -30,10 +30,11 @@ public class ConversationManager : MonoBehaviour
     [SerializeField] ResponseButton flavourTextPrefab;
     [SerializeField] float delayBetweenResponseFades = .3f;
 
-    // AK
-    [Header("Wwise stuff")]
-    public AK.Wwise.CallbackFlags MyCallbackFlags = null;
-    AkEventCallbackData m_callbackData;
+    [Header("Subtitles")]
+    [SerializeField] private Color subtitleColour;
+    [SerializeField] private float subtitleFadeLength = 2;
+    private float subtitleFadeProgress;
+    private float subtitleFadeTime;
 
     private void Awake()
     {
@@ -171,27 +172,21 @@ public class ConversationManager : MonoBehaviour
         AkSoundEngine.PostEvent(eventName, gameObject);
     }
 
+    #region Subtitles
+
     void PlayVoiceLine(string eventName)
     {
-        m_callbackData = new AkEventCallbackData();
-        m_callbackData.callbackFunc.Add("Callback");
-        m_callbackData.callbackGameObj.Add(gameObject);
-        m_callbackData.uFlags = 1;
-        m_callbackData.callbackFlags.Add(0);
-        m_callbackData.callbackFlags.Add(1);
-        m_callbackData.callbackFlags.Add(2);
-
-        AkSoundEngine.PostEvent(eventName, gameObject, (uint)m_callbackData.uFlags, Callback, null);
+        StopCoroutine("FadeSubtitles");
+        subtitleText.color = subtitleColour;
+        AkSoundEngine.PostEvent(eventName, gameObject, (uint)AkCallbackType.AK_Marker | (uint)AkCallbackType.AK_EndOfEvent, VoiceCallback, null);
     }
 
-    void MarkerCallback(AkEventCallbackMsg callbackInfo)
+    private void VoiceCallback(object in_cookie, AkCallbackType in_type, object in_callbackInfo)
     {
-        Debug.Log("Marker callback successful");
-
-        switch (callbackInfo.type)
+        switch (in_type)
         {
             case AkCallbackType.AK_Marker:
-                //var MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
+                // move to next subtitle segment
                 currentSubtitleSegment++;
                 if (currentSubtitleSegment < dialogueStreamer.currentConvo[currentElementIndex].subtitleText.Length)
                 {
@@ -199,21 +194,27 @@ public class ConversationManager : MonoBehaviour
                 }
                 break;
             case AkCallbackType.AK_EndOfEvent:
-                Debug.Log("End of subtitle reached");
+                // fade out
+                StartCoroutine("FadeSubtitles");
                 break;
         }
     }
 
-    private void Callback(object in_cookie, AkCallbackType in_type, object in_callbackInfo)
+    IEnumerator FadeSubtitles()
     {
-        Debug.Log("Marker callback successful");
+        subtitleFadeProgress = subtitleFadeTime = 0;
 
-        switch (in_type)
+        while (subtitleFadeProgress < 1)
         {
-            case AkCallbackType.AK_Marker:
-                //var MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
-                Debug.Log("Marker reached");
-                break;
+            subtitleFadeTime += Time.deltaTime;
+            subtitleFadeProgress = subtitleFadeTime / subtitleFadeLength;
+
+            subtitleText.color = Color.Lerp(subtitleColour, Color.clear, subtitleFadeProgress);
+
+            yield return null;
         }
+
+        subtitleText.gameObject.SetActive(false);
     }
+    #endregion
 }
