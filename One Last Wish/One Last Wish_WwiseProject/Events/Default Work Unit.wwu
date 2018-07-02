@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" SchemaVersion="85">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="UI" ID="{607258DC-999F-42B2-A0FD-F969DDE08E87}" ShortID="114583909">
+					<ChildrenList>
+						<Event Name="responseMouseEnter" ID="{296D8CE5-6977-4376-8C6F-BCF0EA9059A9}">
+							<ChildrenList>
+								<Action Name="" ID="{5E2AA607-7C45-4BAE-B6C6-F6D907DDF82B}" ShortID="1047510837">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="glitch_interface_light_21" ID="{FEB8EBC5-EC79-4237-B044-1FC559F854DE}" WorkUnitID="{F62463ED-38C8-4B6B-A43C-469948866789}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{95FDDCBE-9055-4037-8966-CED0AB2E88A3}" ShortID="823681223">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="glitch_interface_light_21" ID="{FEB8EBC5-EC79-4237-B044-1FC559F854DE}" WorkUnitID="{F62463ED-38C8-4B6B-A43C-469948866789}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Vox" ID="{B16EE654-15A8-4007-8117-886D3E54BEFD}" ShortID="202382651">
+					<ChildrenList>
+						<Folder Name="Example Voices" ID="{F8A3FD79-45A5-442C-9F43-150983556711}" ShortID="326850538">
+							<ChildrenList>
+								<Event Name="introLine1" ID="{2970DE33-ADF8-4FAB-B0B2-79938E30AA8D}">
+									<Comment>Hey</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{CE5DC0AD-0897-41BA-B5F5-ED55D002BF0B}" ShortID="527988355">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Hey" ID="{A3B2D736-5E85-483C-95D4-6790AF3E5251}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine2" ID="{84502C78-51BF-456A-927C-1B2C048EA438}">
+									<Comment>I've got some bad news</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{95233244-2FBD-4643-9AE8-BBDEDD2C4591}" ShortID="539319153">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Got some bad news" ID="{1341ADE1-6E80-428F-8DB1-8DA001AE64CA}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine3" ID="{D7F8C18E-475E-4EFD-893C-42B67AA2386E}">
+									<Comment>Don't freak out ~ but I'm not gonna make it out</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{CE52B07D-62B4-40F6-960A-1D1D1D0E2460}" ShortID="855148339">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Not gonna make it" ID="{E63D06C7-10D2-4B6D-9785-27BB6D8C0F8F}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="introLine4" ID="{D4CF3054-0429-4FBD-B86D-EF0ECAF82CC1}">
+									<Comment>How you getting on? Already clear of the ship?</Comment>
+									<ChildrenList>
+										<Action Name="" ID="{EEC6E131-3ABB-4247-A215-E7FC2EBCBE4D}" ShortID="565371772">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="How you getting on" ID="{EE99589C-F7DC-43FC-8782-20C4A60745E9}" WorkUnitID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

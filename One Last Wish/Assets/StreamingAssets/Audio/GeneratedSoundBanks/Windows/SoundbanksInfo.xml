@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3518590569" Name="responseMouseEnter" ObjectPath="\Events\Default Work Unit\UI\responseMouseEnter" DurationType="OneShot" DurationMin="0.026405" DurationMax="0.026405"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="426026905" Language="SFX">
+					<ShortName>glitch_interface_light_21.wav</ShortName>
+					<Path>SFX\glitch_interface_light_21_603B7CE8.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3714927393" Language="SFX">
+			<ObjectPath>\SoundBanks\Vox\Conversations\ExampleIntro</ObjectPath>
+			<ShortName>ExampleIntro</ShortName>
+			<Path>ExampleIntro.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3959135664" Name="introLine1" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine1" DurationType="OneShot" DurationMin="0.888163" DurationMax="0.888163"/>
+				<Event Id="3959135667" Name="introLine2" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine2" DurationType="OneShot" DurationMin="1.750204" DurationMax="1.750204"/>
+				<Event Id="3959135666" Name="introLine3" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine3" DurationType="OneShot" DurationMin="3.004082" DurationMax="3.004082"/>
+				<Event Id="3959135669" Name="introLine4" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine4" DurationType="OneShot" DurationMin="3.552653" DurationMax="3.552653"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="106416953" Language="SFX">
+					<ShortName>Hey.wav</ShortName>
+					<Path>SFX\Hey_F7D0E330.wem</Path>
+				</File>
+				<File Id="384914904" Language="SFX">
+					<ShortName>Not gonna make it.wav</ShortName>
+					<Path>SFX\Not gonna make it_F7D0E330.wem</Path>
+				</File>
+				<File Id="632635688" Language="SFX">
+					<ShortName>Got some bad news.wav</ShortName>
+					<Path>SFX\Got some bad news_F7D0E330.wem</Path>
+				</File>
+				<File Id="940009059" Language="SFX">
+					<ShortName>How you getting on.wav</ShortName>
+					<Path>SFX\How you getting on_F7D0E330.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -8,7 +8,7 @@ public struct ConvoElement
     public int elementNumber;
     public Personae lineType;
     public string eventName;
-    public string subtitleText;
+    public string[] subtitleText;
     public int minEmotionRange;
     public int maxEmotionRange;
     public string[] requiredMarkers;
@@ -55,6 +55,7 @@ public class JB_DialogueStreamer : MonoBehaviour
 
     public void SetupConversation()     // get conversation in CSV form, split it into ConvoElements and begin playing the conversation
     {
+        currentConvo.Clear();
         fullConvoSplit.Clear();
         fullConvoSplit = new List<string>(convo.text.Split(lineSplitter));    // split the CSV file by line to get each conversation element in its own array field
 
@@ -79,7 +80,7 @@ public class JB_DialogueStreamer : MonoBehaviour
 
         // get the element's subtitles
         if (rawElement[2] == "") ErrorParsingConversation(lineNum, "get element text body (nothing written in field)");
-        else convElement.subtitleText = rawElement[2];
+        else convElement.subtitleText = rawElement[2].Split(subSplitter);
 
         // get min and max emotion ranges
         if (!Int32.TryParse(rawElement[3], out convElement.minEmotionRange))

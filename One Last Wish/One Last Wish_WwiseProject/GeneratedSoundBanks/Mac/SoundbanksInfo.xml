@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3518590569" Name="responseMouseEnter" ObjectPath="\Events\Default Work Unit\UI\responseMouseEnter"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="426026905" Language="SFX">
+					<ShortName>glitch_interface_light_21.wav</ShortName>
+					<Path>SFX\glitch_interface_light_21_AE730CE7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

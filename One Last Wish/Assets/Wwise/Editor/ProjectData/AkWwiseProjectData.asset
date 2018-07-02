@@ -28,23 +28,131 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{E5AA383E-004A-4B02-A61A-23FF2B3E1554}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1333884382
+    m_lastTimePart2: -1999249498
+    m_lastTimePsrt1: 511927162
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 5ff46d3d43c1fd4683e529b5405bda2b
+      ID: 1551306167
+      Name: UI
+      Path: Default Work Unit\UI
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 7
+  - Guid: '{A9913B49-1778-4F8E-BE26-E494F00EDF6A}'
+    m_lastTimePart2: -1999249498
+    m_lastTimePsrt1: 953932875
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Vox.wwu
+    List:
+    - Guid: 663dde7e45dd394d877f851512af16e4
+      ID: -580039903
+      Name: ExampleIntro
+      Path: Vox\Conversations\ExampleIntro
+      PathAndIcons:
+      - ElementName: Vox
+        ObjectType: 12
+      - ElementName: Conversations
+        ObjectType: 4
+      - ElementName: ExampleIntro
+        ObjectType: 7
   basePath: Audio\GeneratedSoundBanks
   callbackManagerBufferSize: 4
   CurrentPluginConfig: 
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{586BADF7-990B-4FAF-940B-59C5EDE631F7}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1334094376
+    m_lastTimePart2: -1999249498
+    m_lastTimePsrt1: 83496640
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
-    List: []
-  ExpandedItems: []
+    List:
+    - Guid: 33de7029f8adab4fb0b279938e30aa8d
+      ID: -335831632
+      Name: introLine1
+      Path: Default Work Unit\Vox\Example Voices\introLine1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine1
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 782c5084bf516a45927c1b2c048ea438
+      ID: -335831629
+      Name: introLine2
+      Path: Default Work Unit\Vox\Example Voices\introLine2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine2
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 8ec1f8d75e47fd4e893c42b67aa2386e
+      ID: -335831630
+      Name: introLine3
+      Path: Default Work Unit\Vox\Example Voices\introLine3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine3
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5430cfd42904bd4fb86def0ecaf82cc1
+      ID: -335831627
+      Name: introLine4
+      Path: Default Work Unit\Vox\Example Voices\introLine4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine4
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e58c6d29776976438c6fbcf0ea9059a9
+      ID: -776376727
+      Name: responseMouseEnter
+      Path: Default Work Unit\UI\responseMouseEnter
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: responseMouseEnter
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /One Last Wish_WwiseProject
+  - /One Last Wish_WwiseProject/Events
+  - /One Last Wish_WwiseProject/Events/Default Work Unit
+  - /One Last Wish_WwiseProject/Events/Default Work Unit/UI
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0

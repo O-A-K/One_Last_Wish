@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A9913B49-1778-4F8E-BE26-E494F00EDF6A}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Vox" ID="{A9913B49-1778-4F8E-BE26-E494F00EDF6A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Conversations" ID="{91E31E62-BA09-4291-BB54-390EDFAE3588}" ShortID="872484582">
+					<ChildrenList>
+						<SoundBank Name="ExampleIntro" ID="{7EDE3D66-DD45-4D39-877F-851512AF16E4}">
+							<ObjectInclusionList>
+								<ObjectRef Name="introLine2" ID="{84502C78-51BF-456A-927C-1B2C048EA438}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine3" ID="{D7F8C18E-475E-4EFD-893C-42B67AA2386E}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine1" ID="{2970DE33-ADF8-4FAB-B0B2-79938E30AA8D}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="introLine4" ID="{D4CF3054-0429-4FBD-B86D-EF0ECAF82CC1}" WorkUnitID="{586BADF7-990B-4FAF-940B-59C5EDE631F7}" Filter="7" Origin="Manual"/>
+							</ObjectInclusionList>
+							<ObjectExclusionList/>
+							<GameSyncExclusionList/>
+						</SoundBank>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

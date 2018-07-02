@@ -5,8 +5,11 @@ using System.Collections.Generic;
 
 public class ConversationManager : MonoBehaviour
 {
+    public static ConversationManager cm;
+
     [SerializeField] private JB_DialogueStreamer dialogueStreamer;
     [SerializeField] private RectTransform responseContent;
+    [SerializeField] private TMPro.TextMeshProUGUI subtitleText;
 
     // Conversation variables
     public int emotionRange = 50;
@@ -16,6 +19,7 @@ public class ConversationManager : MonoBehaviour
     string currentEventName;
     int currentElementCluster;
     int currentElementIndex;
+    int currentSubtitleSegment;
     List<int> possibleElements = new List<int>();
     List<ResponseButton> loadedResponses = new List<ResponseButton>();
     //[HideInInspector]
@@ -24,7 +28,24 @@ public class ConversationManager : MonoBehaviour
     // UI
     [Header("UI")]
     [SerializeField] ResponseButton flavourTextPrefab;
+    [SerializeField] float delayBetweenResponseFades = .3f;
 
+    // AK
+    [Header("Wwise stuff")]
+    public AK.Wwise.CallbackFlags MyCallbackFlags = null;
+    AkEventCallbackData m_callbackData;
+
+    private void Awake()
+    {
+        if (cm)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            cm = this;
+        }
+    }
 
     public void StartConversation()
     {
@@ -104,15 +125,33 @@ public class ConversationManager : MonoBehaviour
                 ReducePossibleElementsToMaxAllowed();
             }
 
+            float fadeDelay = 0;
             // display all the response options
             for (int i = 0; i < possibleElements.Count; i++)
             {
                 ResponseButton _res = Instantiate(flavourTextPrefab, responseContent);
                 _res.flavourText.text = dialogueStreamer.currentConvo[possibleElements[i]].flavourText;
                 _res.indexCurrentConvo = possibleElements[i];
+                _res.eventName = dialogueStreamer.currentConvo[possibleElements[i]].eventName;
+                _res.CallFadeIn(fadeDelay);
+                fadeDelay += delayBetweenResponseFades;
                 loadedResponses.Add(_res);
             }
         }
+    }
+
+    public void LoadSubtitles(string _eventName, int _elementIndex)
+    {
+        // get the element to load
+        currentElementIndex = _elementIndex;
+        currentEventName = _eventName;
+
+        // prep UI elements
+        responseContent.gameObject.SetActive(false);
+        subtitleText.gameObject.SetActive(true);
+        currentSubtitleSegment = 0;
+        subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[0];
+        PlayVoiceLine(currentEventName);
     }
 
     void ReducePossibleElementsToMaxAllowed()
@@ -127,9 +166,54 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaySound(string eventName)
     {
+        AkSoundEngine.PostEvent(eventName, gameObject);
+    }
 
+    void PlayVoiceLine(string eventName)
+    {
+        m_callbackData = new AkEventCallbackData();
+        m_callbackData.callbackFunc.Add("Callback");
+        m_callbackData.callbackGameObj.Add(gameObject);
+        m_callbackData.uFlags = 1;
+        m_callbackData.callbackFlags.Add(0);
+        m_callbackData.callbackFlags.Add(1);
+        m_callbackData.callbackFlags.Add(2);
+
+        AkSoundEngine.PostEvent(eventName, gameObject, (uint)m_callbackData.uFlags, Callback, null);
+    }
+
+    void MarkerCallback(AkEventCallbackMsg callbackInfo)
+    {
+        Debug.Log("Marker callback successful");
+
+        switch (callbackInfo.type)
+        {
+            case AkCallbackType.AK_Marker:
+                //var MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
+                currentSubtitleSegment++;
+                if (currentSubtitleSegment < dialogueStreamer.currentConvo[currentElementIndex].subtitleText.Length)
+                {
+                    subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[currentSubtitleSegment];
+                }
+                break;
+            case AkCallbackType.AK_EndOfEvent:
+                Debug.Log("End of subtitle reached");
+                break;
+        }
+    }
+
+    private void Callback(object in_cookie, AkCallbackType in_type, object in_callbackInfo)
+    {
+        Debug.Log("Marker callback successful");
+
+        switch (in_type)
+        {
+            case AkCallbackType.AK_Marker:
+                //var MarkerCallbackInfo = callbackInfo.info as AkMarkerCallbackInfo;
+                Debug.Log("Marker reached");
+                break;
+        }
     }
 }

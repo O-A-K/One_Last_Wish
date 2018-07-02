@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Vox" ID="{F4AA5A9D-2272-43B5-99EB-084D6E876F9F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Example voices" ID="{A11E83F7-7E3B-4257-8FCE-D0B65F616632}" ShortID="653546687">
+					<ChildrenList>
+						<Sound Name="Got some bad news" ID="{1341ADE1-6E80-428F-8DB1-8DA001AE64CA}" ShortID="301884491">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Got some bad news" ID="{A5D6799C-1ECC-489D-B466-D914CB4A299F}" ShortID="632635688">
+									<Language>SFX</Language>
+									<AudioFile>Got some bad news.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Got some bad news" ID="{A5D6799C-1ECC-489D-B466-D914CB4A299F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Hey" ID="{A3B2D736-5E85-483C-95D4-6790AF3E5251}" ShortID="237378870">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Hey" ID="{E5D7FF49-C40E-4A4E-A209-142EB0EA0908}" ShortID="106416953">
+									<Language>SFX</Language>
+									<AudioFile>Hey.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Hey" ID="{E5D7FF49-C40E-4A4E-A209-142EB0EA0908}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="How you getting on" ID="{EE99589C-F7DC-43FC-8782-20C4A60745E9}" ShortID="292499700">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="How you getting on" ID="{9A47D12F-C106-4834-AB0D-6528D43285DE}" ShortID="940009059">
+									<Language>SFX</Language>
+									<AudioFile>How you getting on.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="How you getting on" ID="{9A47D12F-C106-4834-AB0D-6528D43285DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Not gonna make it" ID="{E63D06C7-10D2-4B6D-9785-27BB6D8C0F8F}" ShortID="305530238">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{4CB3F3B3-5000-4E35-9C49-E9FE555C1F35}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Not gonna make it" ID="{E02302A5-1E94-4C1B-8548-1E856D555C35}" ShortID="384914904">
+									<Language>SFX</Language>
+									<AudioFile>Not gonna make it.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Not gonna make it" ID="{E02302A5-1E94-4C1B-8548-1E856D555C35}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
