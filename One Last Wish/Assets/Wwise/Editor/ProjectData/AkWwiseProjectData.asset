@@ -13,23 +13,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - Guid: '{857C83D2-47B6-465D-90AE-775FEC0C693A}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1333854383
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1003000694
     ParentPhysicalPath: 
     PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     List: []
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{6C53B7F8-2270-4DC4-959D-B404B73BAAB8}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1334064376
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1002490803
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
   BankWwu:
   - Guid: '{E5AA383E-004A-4B02-A61A-23FF2B3E1554}'
-    m_lastTimePart2: -1999249498
-    m_lastTimePsrt1: 511927162
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1003907972
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -43,8 +43,8 @@ MonoBehaviour:
       - ElementName: UI
         ObjectType: 7
   - Guid: '{A9913B49-1778-4F8E-BE26-E494F00EDF6A}'
-    m_lastTimePart2: -1999249498
-    m_lastTimePsrt1: 953932875
+    m_lastTimePart2: -1999249350
+    m_lastTimePsrt1: 1730845663
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Vox.wwu
     List:
@@ -65,8 +65,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{586BADF7-990B-4FAF-940B-59C5EDE631F7}'
-    m_lastTimePart2: -1999249498
-    m_lastTimePsrt1: 83496640
+    m_lastTimePart2: -1999249350
+    m_lastTimePsrt1: 1730885883
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -82,6 +82,70 @@ MonoBehaviour:
       - ElementName: Example Voices
         ObjectType: 4
       - ElementName: introLine1
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f1ef9847e7a6094ead61f2ab444f38a0
+      ID: 756628512
+      Name: introLine10
+      Path: Default Work Unit\Vox\Example Voices\introLine10
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine10
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 62ccc60abf5525449bac8e3e528680de
+      ID: 756628513
+      Name: introLine11
+      Path: Default Work Unit\Vox\Example Voices\introLine11
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine11
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 1cb6043653d4ec4e88963c7403583b40
+      ID: 756628514
+      Name: introLine12
+      Path: Default Work Unit\Vox\Example Voices\introLine12
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine12
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c7982fac6ed079478c8de9ae3e6a3743
+      ID: 756628515
+      Name: introLine13
+      Path: Default Work Unit\Vox\Example Voices\introLine13
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine13
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -134,6 +198,86 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: f88ac979b7556940aeb015c6d62e6115
+      ID: -335831628
+      Name: introLine5
+      Path: Default Work Unit\Vox\Example Voices\introLine5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine5
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: dfa5c2cdecc1774fa84514742baa967c
+      ID: -335831625
+      Name: introLine6
+      Path: Default Work Unit\Vox\Example Voices\introLine6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine6
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ba4a9c5f11115841b352d1ee4ca1e7e2
+      ID: -335831626
+      Name: introLine7
+      Path: Default Work Unit\Vox\Example Voices\introLine7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine7
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c3d3fe783c956d419e80a1799bafd553
+      ID: -335831623
+      Name: introLine8
+      Path: Default Work Unit\Vox\Example Voices\introLine8
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine8
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: da9cc50bd27e4a4b9cec890693bc1fc9
+      ID: -335831624
+      Name: introLine9
+      Path: Default Work Unit\Vox\Example Voices\introLine9
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Vox
+        ObjectType: 4
+      - ElementName: Example Voices
+        ObjectType: 4
+      - ElementName: introLine9
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: e58c6d29776976438c6fbcf0ea9059a9
       ID: -776376727
       Name: responseMouseEnter
@@ -153,6 +297,8 @@ MonoBehaviour:
   - /One Last Wish_WwiseProject/Events
   - /One Last Wish_WwiseProject/Events/Default Work Unit
   - /One Last Wish_WwiseProject/Events/Default Work Unit/UI
+  - /One Last Wish_WwiseProject/Events/Default Work Unit/Vox
+  - /One Last Wish_WwiseProject/Events/Default Work Unit/Vox/Example Voices
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -161,30 +307,30 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{CE113238-9D4B-4760-B7E1-53B9D59A593E}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1334054378
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1002390829
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
     List: []
   StateWwu:
   - Guid: '{315D6EAA-153E-455D-998F-8A2ED976A0F6}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1333874382
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1002990693
     ParentPhysicalPath: 
     PhysicalPath: States\Default Work Unit.wwu
     List: []
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{6BCBE8AC-3FE1-4FD4-9D4F-209284364AFC}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1333994380
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1003000694
     ParentPhysicalPath: 
     PhysicalPath: Switches\Default Work Unit.wwu
     List: []
   TriggerWwu:
   - Guid: '{D1B9C669-C1BC-4C3C-A5EF-52B2BB3EE58C}'
-    m_lastTimePart2: -1999253352
-    m_lastTimePsrt1: -1334014375
+    m_lastTimePart2: -1999249401
+    m_lastTimePsrt1: 1003000694
     ParentPhysicalPath: 
     PhysicalPath: Triggers\Default Work Unit.wwu
     List: []

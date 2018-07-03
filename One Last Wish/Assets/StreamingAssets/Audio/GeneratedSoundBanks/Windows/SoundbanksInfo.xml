@@ -36,18 +36,18 @@
 			<Path>ExampleIntro.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3959135664" Name="introLine1" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine1" DurationType="OneShot" DurationMin="0.888163" DurationMax="0.888163"/>
-				<Event Id="756628512" Name="introLine10" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine10" DurationType="OneShot" DurationMin="1.541224" DurationMax="1.541224"/>
-				<Event Id="756628513" Name="introLine11" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine11" DurationType="OneShot" DurationMin="1.201633" DurationMax="1.201633"/>
-				<Event Id="756628514" Name="introLine12" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine12" DurationType="OneShot" DurationMin="5.694694" DurationMax="5.694694"/>
-				<Event Id="756628515" Name="introLine13" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine13" DurationType="OneShot" DurationMin="2.560000" DurationMax="2.560000"/>
+				<Event Id="756628512" Name="introLine10" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine10" DurationType="OneShot" DurationMin="2.041224" DurationMax="2.041224"/>
+				<Event Id="756628513" Name="introLine11" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine11" DurationType="OneShot" DurationMin="1.701633" DurationMax="1.701633"/>
+				<Event Id="756628514" Name="introLine12" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine12" DurationType="OneShot" DurationMin="6.194694" DurationMax="6.194694"/>
+				<Event Id="756628515" Name="introLine13" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine13" DurationType="OneShot" DurationMin="3.060000" DurationMax="3.060000"/>
 				<Event Id="3959135667" Name="introLine2" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine2" DurationType="OneShot" DurationMin="1.750204" DurationMax="1.750204"/>
 				<Event Id="3959135666" Name="introLine3" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine3" DurationType="OneShot" DurationMin="3.004082" DurationMax="3.004082"/>
 				<Event Id="3959135669" Name="introLine4" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine4" DurationType="OneShot" DurationMin="3.552653" DurationMax="3.552653"/>
-				<Event Id="3959135668" Name="introLine5" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine5" DurationType="OneShot" DurationMin="2.351020" DurationMax="2.351020"/>
-				<Event Id="3959135671" Name="introLine6" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine6" DurationType="OneShot" DurationMin="1.515102" DurationMax="1.515102"/>
-				<Event Id="3959135670" Name="introLine7" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine7" DurationType="OneShot" DurationMin="0.705306" DurationMax="0.705306"/>
-				<Event Id="3959135673" Name="introLine8" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine8" DurationType="OneShot" DurationMin="1.175510" DurationMax="1.175510"/>
-				<Event Id="3959135672" Name="introLine9" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine9" DurationType="OneShot" DurationMin="2.089796" DurationMax="2.089796"/>
+				<Event Id="3959135668" Name="introLine5" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine5" DurationType="OneShot" DurationMin="2.851020" DurationMax="2.851020"/>
+				<Event Id="3959135671" Name="introLine6" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine6" DurationType="OneShot" DurationMin="2.015102" DurationMax="2.015102"/>
+				<Event Id="3959135670" Name="introLine7" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine7" DurationType="OneShot" DurationMin="1.205306" DurationMax="1.205306"/>
+				<Event Id="3959135673" Name="introLine8" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine8" DurationType="OneShot" DurationMin="1.675510" DurationMax="1.675510"/>
+				<Event Id="3959135672" Name="introLine9" ObjectPath="\Events\Default Work Unit\Vox\Example Voices\introLine9" DurationType="OneShot" DurationMin="2.589796" DurationMax="2.589796"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="1519286" Language="SFX">

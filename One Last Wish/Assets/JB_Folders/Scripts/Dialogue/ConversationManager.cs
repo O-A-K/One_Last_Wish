@@ -35,6 +35,7 @@ public class ConversationManager : MonoBehaviour
     [SerializeField] private float subtitleFadeLength = 2;
     private float subtitleFadeProgress;
     private float subtitleFadeTime;
+    private bool firstSubtitleReached;
 
     private void Awake()
     {
@@ -57,7 +58,6 @@ public class ConversationManager : MonoBehaviour
         currentElementIndex = 0;
         inConversation = true;
         LoadNextLine();
-        responseContent.gameObject.SetActive(true);
     }
 
     void LoadNextLine()
@@ -141,6 +141,9 @@ public class ConversationManager : MonoBehaviour
                 loadedResponses.Add(_res);
             }
         }
+
+        responseContent.gameObject.SetActive(true);
+        subtitleText.gameObject.SetActive(false);
     }
 
     void LoadCurrentSubtitleCluster()
@@ -161,6 +164,7 @@ public class ConversationManager : MonoBehaviour
             return;
         }
 
+        responseContent.gameObject.SetActive(false);
         LoadSubtitles(dialogueStreamer.currentConvo[currentElementIndex].eventName, currentElementIndex);
     }
 
@@ -206,16 +210,13 @@ public class ConversationManager : MonoBehaviour
 
         // prep UI elements
         responseContent.gameObject.SetActive(false);
-        subtitleText.gameObject.SetActive(true);
         currentSubtitleSegment = 0;
-        subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[0];
+        firstSubtitleReached = false;
         PlayVoiceLine(currentEventName);
     }
 
     void PlayVoiceLine(string eventName)
     {
-        StopCoroutine("FadeSubtitles");
-        subtitleText.color = subtitleColour;
         AkSoundEngine.PostEvent(eventName, gameObject, (uint)AkCallbackType.AK_Marker | (uint)AkCallbackType.AK_EndOfEvent, VoiceCallback, null);
     }
 
@@ -224,11 +225,23 @@ public class ConversationManager : MonoBehaviour
         switch (in_type)
         {
             case AkCallbackType.AK_Marker:
-                // move to next subtitle segment
-                currentSubtitleSegment++;
-                if (currentSubtitleSegment < dialogueStreamer.currentConvo[currentElementIndex].subtitleText.Length)
+                // once beginning of event is reached, display first subtitle else show next segment
+                if (!firstSubtitleReached)
                 {
-                    subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[currentSubtitleSegment];
+                    firstSubtitleReached = true;
+                    subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[0];
+                    subtitleText.gameObject.SetActive(true);
+                    StopCoroutine("FadeSubtitles");
+                    subtitleText.color = subtitleColour;
+                }
+                else
+                {
+                    // move to next subtitle segment
+                    currentSubtitleSegment++;
+                    if (currentSubtitleSegment < dialogueStreamer.currentConvo[currentElementIndex].subtitleText.Length)
+                    {
+                        subtitleText.text = dialogueStreamer.currentConvo[currentElementIndex].subtitleText[currentSubtitleSegment];
+                    }
                 }
                 break;
             case AkCallbackType.AK_EndOfEvent:
