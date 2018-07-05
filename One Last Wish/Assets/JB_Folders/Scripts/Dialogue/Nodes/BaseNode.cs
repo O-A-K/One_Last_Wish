@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using System.Collections;
 using UnityEditor;
 
@@ -30,3 +31,4 @@ public abstract class BaseNode : ScriptableObject
         return null;
     }
 }
+#endif

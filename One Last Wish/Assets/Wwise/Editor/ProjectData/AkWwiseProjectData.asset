@@ -65,8 +65,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{586BADF7-990B-4FAF-940B-59C5EDE631F7}'
-    m_lastTimePart2: -1999249350
-    m_lastTimePsrt1: 1730885883
+    m_lastTimePart2: -1999249205
+    m_lastTimePsrt1: -381912553
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -84,8 +84,8 @@ MonoBehaviour:
       - ElementName: introLine1
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.888163
+      minDuration: 0.888163
     - Guid: f1ef9847e7a6094ead61f2ab444f38a0
       ID: 756628512
       Name: introLine10
@@ -100,8 +100,8 @@ MonoBehaviour:
       - ElementName: introLine10
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.041224
+      minDuration: 2.041224
     - Guid: 62ccc60abf5525449bac8e3e528680de
       ID: 756628513
       Name: introLine11
@@ -116,8 +116,8 @@ MonoBehaviour:
       - ElementName: introLine11
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.701633
+      minDuration: 1.701633
     - Guid: 1cb6043653d4ec4e88963c7403583b40
       ID: 756628514
       Name: introLine12
@@ -132,8 +132,8 @@ MonoBehaviour:
       - ElementName: introLine12
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 6.194694
+      minDuration: 6.194694
     - Guid: c7982fac6ed079478c8de9ae3e6a3743
       ID: 756628515
       Name: introLine13
@@ -148,8 +148,8 @@ MonoBehaviour:
       - ElementName: introLine13
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.06
+      minDuration: 3.06
     - Guid: 782c5084bf516a45927c1b2c048ea438
       ID: -335831629
       Name: introLine2
@@ -164,8 +164,8 @@ MonoBehaviour:
       - ElementName: introLine2
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.750204
+      minDuration: 1.750204
     - Guid: 8ec1f8d75e47fd4e893c42b67aa2386e
       ID: -335831630
       Name: introLine3
@@ -180,8 +180,8 @@ MonoBehaviour:
       - ElementName: introLine3
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.004082
+      minDuration: 3.004082
     - Guid: 5430cfd42904bd4fb86def0ecaf82cc1
       ID: -335831627
       Name: introLine4
@@ -196,8 +196,8 @@ MonoBehaviour:
       - ElementName: introLine4
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 3.552653
+      minDuration: 3.552653
     - Guid: f88ac979b7556940aeb015c6d62e6115
       ID: -335831628
       Name: introLine5
@@ -212,8 +212,8 @@ MonoBehaviour:
       - ElementName: introLine5
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.85102
+      minDuration: 2.85102
     - Guid: dfa5c2cdecc1774fa84514742baa967c
       ID: -335831625
       Name: introLine6
@@ -228,8 +228,8 @@ MonoBehaviour:
       - ElementName: introLine6
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.015102
+      minDuration: 2.015102
     - Guid: ba4a9c5f11115841b352d1ee4ca1e7e2
       ID: -335831626
       Name: introLine7
@@ -244,8 +244,8 @@ MonoBehaviour:
       - ElementName: introLine7
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.205306
+      minDuration: 1.205306
     - Guid: c3d3fe783c956d419e80a1799bafd553
       ID: -335831623
       Name: introLine8
@@ -260,8 +260,8 @@ MonoBehaviour:
       - ElementName: introLine8
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.67551
+      minDuration: 1.67551
     - Guid: da9cc50bd27e4a4b9cec890693bc1fc9
       ID: -335831624
       Name: introLine9
@@ -276,8 +276,8 @@ MonoBehaviour:
       - ElementName: introLine9
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2.589796
+      minDuration: 2.589796
     - Guid: e58c6d29776976438c6fbcf0ea9059a9
       ID: -776376727
       Name: responseMouseEnter
@@ -290,8 +290,8 @@ MonoBehaviour:
       - ElementName: responseMouseEnter
         ObjectType: 3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.026405
+      minDuration: 0.026405
   ExpandedItems:
   - /One Last Wish_WwiseProject
   - /One Last Wish_WwiseProject/Events

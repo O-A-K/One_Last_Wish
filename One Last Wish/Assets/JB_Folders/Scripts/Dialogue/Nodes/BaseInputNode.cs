@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using System.Collections;
 
 public class BaseInputNode : BaseNode
@@ -14,3 +15,4 @@ public class BaseInputNode : BaseNode
         
     }
 }
+#endif
