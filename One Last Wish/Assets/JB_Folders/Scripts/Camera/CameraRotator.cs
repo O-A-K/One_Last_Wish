@@ -15,32 +15,34 @@ public class CameraRotator : MonoBehaviour
 
     public float mouseLookSensitivity = 1;
 
-    // Use this for initialization
+    [SerializeField] PlayerCharacter pc;
+
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        // if player can input
-        mouseInput.x = Input.GetAxis("Mouse X");
-        mouseInput.y = Input.GetAxis("Mouse Y");
+        //// if player can input
+        //mouseInput.x = Input.GetAxis("Mouse X");
+        //mouseInput.y = Input.GetAxis("Mouse Y");
 
-        if (mouseInput != Vector2.zero)
-        {
-            // if some input detected
-            camLookAtHolder.rotation = camLookAtHolder.rotation * Quaternion.AngleAxis(Time.deltaTime * mouseLookSensitivity * mouseInput.x, Vector3.up);
-            camLookAtHolder.rotation = camLookAtHolder.rotation * Quaternion.AngleAxis(Time.deltaTime * mouseLookSensitivity * mouseInput.y, Vector3.left);
-        }
+        //if (mouseInput != Vector2.zero)
+        //{
+        //    // if some input detected
+        //    camLookAtHolder.rotation = camLookAtHolder.rotation * Quaternion.AngleAxis(Time.deltaTime * mouseLookSensitivity * mouseInput.x, Vector3.up);
+        //    camLookAtHolder.rotation = camLookAtHolder.rotation * Quaternion.AngleAxis(Time.deltaTime * mouseLookSensitivity * mouseInput.y, Vector3.left);
+        //}
 
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    Cursor.lockState = CursorLockMode.None;
+        //    Cursor.visible = true;
+        //}
     }
 }
