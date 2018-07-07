@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using System.Collections;
 
 public class OutputNode : BaseNode
@@ -87,3 +88,4 @@ public class OutputNode : BaseNode
         }
     }
 }
+#endif
