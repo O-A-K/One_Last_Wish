@@ -5,8 +5,9 @@ using UnityEngine;
 public class CameraRotator : MonoBehaviour
 {
     public Transform camLookAt;
-    public Transform camLookAtHolder;
+    //public Transform camLookAtHolder;
     public Transform camFollow;
+    public Animator camFollowAnim;
     Vector3 camFollowResting = new Vector3(0, 0, 1);
     public Cinemachine.CinemachineVirtualCamera playerCam;
 

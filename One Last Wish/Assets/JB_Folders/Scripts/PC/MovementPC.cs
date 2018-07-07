@@ -24,6 +24,12 @@ public class MovementPC : MonoBehaviour
     [Tooltip("Time to reach full stop after running")]
     [Range(0, 4)]
     public float decelerationLengthRunning;
+    [Tooltip("Multiply speed by this when quickly changing ground plane direction")]
+    [Range(0,1)]
+    public float directionSwitchSpeedMultiplier = .25f;
+    [Tooltip("Multiply speed by this when moving backwards")]
+    [Range(0, 1)]
+    public float backwardsSpeedMultiplier = .5f;
 
     bool isAccel;
     bool isDecel;
@@ -40,7 +46,6 @@ public class MovementPC : MonoBehaviour
 
     public MovementStates movementState = MovementStates.Stopped;
 
-    // TODO make input manager
 
     // ground plane movement
     bool left;
@@ -50,6 +55,7 @@ public class MovementPC : MonoBehaviour
 
     void Update()
     {
+        // TODO make input manager
         #region Input Manager
         // WASD down
         if (Input.GetKeyDown(KeyCode.W))
@@ -93,7 +99,7 @@ public class MovementPC : MonoBehaviour
         }
         else if (left) moveInput.x = -1;
         else moveInput.x = 1;
-        
+
         if (moveInput != Vector2.zero)
         {
             // if some input detected
@@ -103,13 +109,6 @@ public class MovementPC : MonoBehaviour
             groundPlaneMovement = Camera.main.transform.TransformDirection(groundPlaneMovement);
             groundPlaneMovement.y = 0;
             groundPlaneMovement.Normalize();
-            previousGroundPlaneMovement = groundPlaneMovement;
-            float dot = Vector3.Dot(groundPlaneMovement, previousGroundPlaneMovement);
-
-            if (dot < 0)
-            {
-                Debug.Log("Opposite");
-            }
 
             // if was stopped begin accelerating PC movement
             if (movementState == MovementStates.Stopped)
@@ -145,6 +144,8 @@ public class MovementPC : MonoBehaviour
                 // TODO running?
             }
         }
+
+        previousGroundPlaneMovement = groundPlaneMovement;
     }
 
     private void LateUpdate()
@@ -164,22 +165,24 @@ public class MovementPC : MonoBehaviour
         StopCoroutine("RampDownSpeedWalking");
         isAccel = true;
         isDecel = false;
-        accelProgress = 1 - (moveSpeed - currentMoveSpeed) / moveSpeed;
+        accelProgress = pc.cameraRotator.camFollowAnim.speed = 1 - (moveSpeed - currentMoveSpeed) / moveSpeed;
         accelTimer = accelerationLength * accelProgress;
         speedOrigin = currentMoveSpeed;
         movementState = MovementStates.Walking;
+        pc.cameraRotator.camFollowAnim.SetBool("isWalking", true);
 
         while (accelProgress < 1)
         {
             accelTimer += Time.deltaTime;
             accelProgress = accelTimer / accelerationLength;
+            pc.cameraRotator.camFollowAnim.speed = accelProgress * (back ? backwardsSpeedMultiplier : 1);
 
-            currentMoveSpeed = Mathf.Lerp(speedOrigin, moveSpeed, accelProgress);
+            currentMoveSpeed = Mathf.Lerp(speedOrigin, back ? moveSpeed * backwardsSpeedMultiplier : moveSpeed, accelProgress); // if moving backwards apply multiplier
 
             yield return null;
         }
-
-        currentMoveSpeed = moveSpeed;
+        pc.cameraRotator.camFollowAnim.speed = back ? backwardsSpeedMultiplier : 1;
+        currentMoveSpeed = back ? moveSpeed * backwardsSpeedMultiplier : moveSpeed;
         isAccel = false;
     }
 
@@ -189,29 +192,31 @@ public class MovementPC : MonoBehaviour
         isDecel = true;
         isAccel = false;
         accelProgress = (moveSpeed - currentMoveSpeed) / moveSpeed;
+        pc.cameraRotator.camFollowAnim.speed = accelProgress * (back ? backwardsSpeedMultiplier : 1);
         accelTimer = decelerationLengthWalking * accelProgress;
         speedOrigin = currentMoveSpeed;
 
         while (accelProgress < 1)
         {
             accelTimer += Time.deltaTime;
-            accelProgress = accelTimer / decelerationLengthWalking;
+            accelProgress = pc.cameraRotator.camFollowAnim.speed = accelTimer / decelerationLengthWalking;
 
             currentMoveSpeed = Mathf.Lerp(speedOrigin, 0, accelProgress);
 
             yield return null;
         }
 
-        currentMoveSpeed = 0;
+        currentMoveSpeed = pc.cameraRotator.camFollowAnim.speed = 0;
         isDecel = false;
         movementState = MovementStates.Stopped;
+        pc.cameraRotator.camFollowAnim.SetBool("isWalking", false);
     }
 
     void SwitchDirection()
     {
         StopCoroutine("RampDownSpeedWalking");
         StopCoroutine("RampUpSpeed");
-        currentMoveSpeed *= .0f;
+        currentMoveSpeed *= directionSwitchSpeedMultiplier;
         StartCoroutine("RampUpSpeed");
     }
     #endregion

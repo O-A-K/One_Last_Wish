@@ -138,8 +138,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 344119050}
-  m_RootOrder: 0
+  m_Father: {fileID: 1009327333}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &45106815
 GameObject:
@@ -291,35 +291,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &344119049
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 344119050}
-  m_Layer: 0
-  m_Name: Cam Look At Holder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &344119050
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 344119049}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 22759951}
-  m_Father: {fileID: 1009327333}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643717552
 GameObject:
@@ -666,7 +637,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1708029038}
-  - {fileID: 344119050}
+  - {fileID: 22759951}
   - {fileID: 673125231}
   m_Father: {fileID: 1614470017}
   m_RootOrder: 0
@@ -1032,8 +1003,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camLookAt: {fileID: 22759951}
-  camLookAtHolder: {fileID: 344119050}
   camFollow: {fileID: 673125231}
+  camFollowAnim: {fileID: 673125232}
   playerCam: {fileID: 1708029039}
   mouseLookSensitivity: 50
   pc: {fileID: 1614470021}
@@ -1067,8 +1038,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   accelerationLength: 1
-  decelerationLengthWalking: 0.5
+  decelerationLengthWalking: 0.25
   decelerationLengthRunning: 0
+  directionSwitchSpeedMultiplier: 0.25
+  backwardsSpeedMultiplier: 0.5
   cc: {fileID: 1614470019}
   pc: {fileID: 1614470021}
   movementState: 0
