@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	756628512	introLine10			\Default Work Unit\Vox\Example Voices\introLine10	What are you talking about?
+	756628513	introLine11			\Default Work Unit\Vox\Example Voices\introLine11	That's not funny
+	756628514	introLine12			\Default Work Unit\Vox\Example Voices\introLine12	Yeah just about. Drew said we have to be at least a lighthour away just to be safe
+	756628515	introLine13			\Default Work Unit\Vox\Example Voices\introLine13	Yeah nearly. What about you?
+	3959135664	introLine1			\Default Work Unit\Vox\Example Voices\introLine1	Hey
+	3959135666	introLine3			\Default Work Unit\Vox\Example Voices\introLine3	Don't freak out ~ but I'm not gonna make it out
+	3959135667	introLine2			\Default Work Unit\Vox\Example Voices\introLine2	I've got some bad news
+	3959135668	introLine5			\Default Work Unit\Vox\Example Voices\introLine5	Hi hun - already on your way?
+	3959135669	introLine4			\Default Work Unit\Vox\Example Voices\introLine4	How you getting on? Already clear of the ship?
+	3959135670	introLine7			\Default Work Unit\Vox\Example Voices\introLine7	Hey you
+	3959135671	introLine6			\Default Work Unit\Vox\Example Voices\introLine6	Hey - nearly out?
+	3959135672	introLine9			\Default Work Unit\Vox\Example Voices\introLine9	What do you mean "bad news"
+	3959135673	introLine8			\Default Work Unit\Vox\Example Voices\introLine8	Bad news?
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1519286	Hey nearly out	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Hey nearly out_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Hey nearly out		15780
+	7330252	What are you talking about	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\What are you talking about_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\What are you talking about		16789
+	106416953	Hey	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Hey_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Hey		8954
+	218271074	What do you mean bad news	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\What do you mean bad news_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\What do you mean bad news		21059
+	362878673	Bad news	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Bad news_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Bad news		12914
+	384914904	Not gonna make it	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Not gonna make it_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Not gonna make it		35773
+	438421825	Hey you	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Hey you_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Hey you		7551
+	446872536	Hi hun	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Hi hun_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Hi hun		23694
+	632635688	Got some bad news	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Got some bad news_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Got some bad news		21363
+	651165165	Yeah just about	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Yeah just about_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Yeah just about		58726
+	737247821	Nearly what about you	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Nearly what about you_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Nearly what about you		23171
+	890031811	Thats not funny	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\Thats not funny_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\Thats not funny		13098
+	940009059	How you getting on	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Windows\SFX\How you getting on_F7D0E330.wem		\Actor-Mixer Hierarchy\Vox\Example voices\How you getting on		35514
+

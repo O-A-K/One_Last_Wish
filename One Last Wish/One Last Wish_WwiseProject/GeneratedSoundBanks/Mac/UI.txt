@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	3518590569	responseMouseEnter			\Default Work Unit\UI\responseMouseEnter	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	426026905	glitch_interface_light_21	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Mac\SFX\glitch_interface_light_21_AE730CE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\glitch_interface_light_21		7152
+	426026905	glitch_interface_light_21	F:\Documents\Tasty Pixel\One Last Wish\One_Last_Wish\One Last Wish\One Last Wish_WwiseProject\.cache\Mac\SFX\glitch_interface_light_21_D7DE68F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\glitch_interface_light_21		5132
 
